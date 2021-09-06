@@ -1,0 +1,28 @@
+{
+  "name": "vaadim",
+  "version": "1.0.0",
+  "license": "MIT",
+  "dependencies": {
+    "@types/node": "^16.7.11",
+    "@vaadin/router": "^1.7.4",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "firebase": "8.7.1",
+    "firebase-admin": "^9.11.1",
+    "lodash": "^4.17.21",
+    "nanoid": "^3.1.25",
+    "parcel": "^2.0.0-rc.0",
+    "rand-token": "^1.0.1",
+    "typescript": "^4.4.2"
+  },
+  "scripts": {
+    "serve": "parcel serve ./src/index.html",
+    "dev": "ts-node backend.ts",
+    "test": "",
+    "build": "tsc ./backend.ts",
+    "start": "node ./backend.js"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.12"
+  }
+}
