@@ -18,7 +18,7 @@
   "scripts": {
     "serve": "parcel serve ./src/index.html",
     "parcel:build": "parcel build ./src/index.html --dist-dir ./dist",
-    "dev": "ts-node backend.ts",
+    "dev": "parcel build ./src/index.html --dist-dir ./dist && ts-node backend.ts",
     "test": "",
     "build": "tsc ./backend.ts",
     "start": "node ./backend.js"
