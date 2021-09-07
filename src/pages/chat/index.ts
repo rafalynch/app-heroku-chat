@@ -1,5 +1,6 @@
 import { state } from "../../state";
 import map from "lodash/map";
+import { Router } from "@vaadin/router";
 
 customElements.define(
   "custom-chat",
@@ -12,6 +13,9 @@ customElements.define(
     }
     render() {
       state.init();
+      if (!state.getState().signedIn) {
+        Router.go("/home");
+      }
       const chatContainer = document.createElement("div");
       chatContainer.className = "chat-container";
 
